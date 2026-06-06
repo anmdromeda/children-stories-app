@@ -40,9 +40,10 @@ storyForm.addEventListener("submit", async (event) => {
     loadingStory = true;
     const story = await generateStoryUseCase.execute({ keywords: userTheme });
 
-    storyOutput.innerHTML = `<h2>${story.title}</h2>
-         <img class="story-image" src="${story.imageUrl}" alt="Ilustración del cuento"/>
-         <p>${story.content}</p>
+    storyOutput.innerHTML = `
+    <h2 class="story-title">${story.title}</h2>
+    <p>${story.content}</p>
+    <img class="story-image" src="${story.imageUrl}" alt="Ilustración del cuento"/>
 `;
   } catch {
     storyOutput.innerHTML = "<p>Hubo un error al conectar con el reino mágico.</p>";

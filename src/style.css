@@ -82,10 +82,16 @@ button:hover {
 }
 
 /* Estilo del cuento */
+.story-title {
+  color: #2d3436;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .story-box {
   margin-top: 20px;
-  padding: 20px;
-  line-height: 1.8;
   animation: fadeIn 0.5s ease-in;
 }
 
@@ -94,6 +100,13 @@ button:hover {
   border-radius: 20px;
   margin: 15px 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.story-box p {
+  color: #2d3436;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
 }
 
 /* Animación de carga */
@@ -109,5 +122,4 @@ button:hover {
   font-style: italic;
   color: #636e72;
   text-align: center;
-  padding: 20px;
 }
