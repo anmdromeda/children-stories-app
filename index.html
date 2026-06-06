@@ -9,7 +9,20 @@
     <title>Children Stories</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <h1>✨ Fábrica de Cuentos</h1>
+
+        <form id="storyForm" class="input-section">
+          <input type="text" id="themeInput" placeholder="Ej: un valiente caballero..." required />
+          <button type="submit" id="generateBtn">Crear Cuento</button>
+        </form>
+
+        <div id="storyOutput" class="story-box">
+          <p>Escribe una idea y presiona el botón para empezar la aventura.</p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
